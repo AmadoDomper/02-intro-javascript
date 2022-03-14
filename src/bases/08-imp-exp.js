@@ -2,7 +2,7 @@
 
 import heroes, { owners} from "../data/heores";
 
-console.log(owners);
+// console.log(owners);
 
 // import { heroes } from "./data/heores";
 
@@ -12,9 +12,14 @@ console.log(owners);
 
 const getHeroeById = (id) => heroes.find( heroe => heroe.id === id);
 
-console.log( getHeroeById(2));
-console.log( getHeroeById(3));
+// console.log( getHeroeById(2));
+// console.log( getHeroeById(3));
 
 const getHeroesByOwner = ( owner) => heroes.filter( heroe => heroe.owner === owner);
 
-console.log( getHeroesByOwner('DC'));
+// console.log( getHeroesByOwner('DC'));
+
+export {
+    getHeroeById,
+    getHeroesByOwner
+}
